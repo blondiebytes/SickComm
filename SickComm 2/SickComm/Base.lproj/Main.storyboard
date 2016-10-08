@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SickComm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SickComm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8au-Gq-K2k">
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpO-rM-yl9">
+                                <state key="normal" backgroundImage="water"/>
+                                <connections>
+                                    <action selector="imageButton1PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="686-ag-mLZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-eB-AZQ">
+                                <state key="normal" backgroundImage="food"/>
+                                <connections>
+                                    <action selector="imageButton2PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mPb-6b-eon"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9S-km-Esj">
+                                <frame key="frameInset" minX="202" minY="487" width="154" height="100"/>
+                                <state key="normal" title="Button" image="medicine"/>
+                                <connections>
+                                    <action selector="imageButton4PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyU-Gg-7w9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-WQ-Q4u">
+                                <frame key="frameInset" minX="26" minY="465" width="175" height="175"/>
+                                <state key="normal" backgroundImage="blanket"/>
+                                <connections>
+                                    <action selector="imageButton3PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyF-6F-BF2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0u-N7-9N4">
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Set Caretaker to Begin">
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="careTakerButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uID-Wj-3XD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uEI-WQ-Q4u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="510-5z-J7O"/>
+                            <constraint firstItem="8au-Gq-K2k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aV-OM-bjv"/>
+                            <constraint firstItem="GpO-rM-yl9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="175" id="CgP-Pa-dFA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l9S-km-Esj" secondAttribute="trailing" constant="-30" id="XB3-4e-LRb"/>
+                            <constraint firstItem="Z0u-N7-9N4" firstAttribute="top" secondItem="KiI-eB-AZQ" secondAttribute="bottom" constant="200" id="Xz0-6S-Y59"/>
+                            <constraint firstItem="GpO-rM-yl9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="a2R-Xp-fSY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KiI-eB-AZQ" secondAttribute="trailing" constant="20" id="aba-qw-xoC"/>
+                            <constraint firstItem="l9S-km-Esj" firstAttribute="leading" secondItem="uEI-WQ-Q4u" secondAttribute="trailing" constant="10" id="cF7-hr-PHu"/>
+                            <constraint firstItem="Z0u-N7-9N4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frS-vp-i3Z"/>
+                            <constraint firstItem="l9S-km-Esj" firstAttribute="top" secondItem="KiI-eB-AZQ" secondAttribute="bottom" constant="65" id="o6R-D7-PDM"/>
+                            <constraint firstItem="KiI-eB-AZQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="182" id="s9g-AS-HQM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z0u-N7-9N4" secondAttribute="bottom" constant="50" id="tJn-Ge-YZL"/>
+                            <constraint firstItem="8au-Gq-K2k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="75" id="ugl-FY-t9v"/>
+                            <constraint firstItem="uEI-WQ-Q4u" firstAttribute="top" secondItem="GpO-rM-yl9" secondAttribute="bottom" constant="60" id="y5y-hq-HIC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xz0-6S-Y59"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="careTakerButton" destination="Z0u-N7-9N4" id="1gf-Za-dCc"/>
+                        <outlet property="imageButton1" destination="GpO-rM-yl9" id="bcS-M2-f6q"/>
+                        <outlet property="imageButton2" destination="KiI-eB-AZQ" id="blh-EY-2DD"/>
+                        <outlet property="imageButton3" destination="uEI-WQ-Q4u" id="f3D-Vu-Zn7"/>
+                        <outlet property="imageButton4" destination="l9S-km-Esj" id="PXD-VR-wVa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375" y="464"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blanket" width="150" height="150"/>
+        <image name="food" width="150" height="150"/>
+        <image name="medicine" width="100" height="100"/>
+        <image name="water" width="150" height="150"/>
+    </resources>
+</document>

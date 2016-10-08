@@ -1,0 +1,6 @@
+framework module Pods_SickComm {
+  umbrella header "Pods-SickComm-umbrella.h"
+
+  export *
+  module * { export * }
+}
