@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 
+// alert after text message
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageButton1: UIButton!
@@ -56,15 +58,17 @@ class ViewController: UIViewController {
         
         // Build the completion block and send the request
         URLSession.shared.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
-            print("Finished")
-            if let data = data, let responseDetails = NSString(data: data, encoding: String.Encoding.utf8.rawValue) {
-                // Success
-                print("Response: \(responseDetails)")
-            } else {
-                // Failure
-                print("Error: \(error)")
-            }
-        }).resume()
+            
+            // create the alert
+            let textAlert = UIAlertController(title: "Text Message Sent!", message: "", preferredStyle: UIAlertControllerStyle.alert)
+            
+            /// Success!
+            textAlert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(textAlert, animated: true, completion: nil)
+            
+            }).resume()
     }
     
     func createUIAlert(title:String, sayAloud:String, textMessage:String) -> UIAlertController {
