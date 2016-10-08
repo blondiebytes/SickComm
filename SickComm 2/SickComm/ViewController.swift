@@ -41,8 +41,8 @@ class ViewController: UIViewController {
     
     func sendSMS(textMessage:String)
     {
-        let twilioSID = "AC03d8c57967b2758bec0e2b23409cf5f4"
-        let twilioSecret = "1f518367a9dd258bd344f92cb8e5ac0c"
+        let twilioSID = ""
+        let twilioSecret = ""
         
         //Note replace + = %2B , for To and From phone number
         let fromNumber = self.userNumber
