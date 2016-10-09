@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        //
     }
     
     func sendSMS(textMessage:String)
@@ -171,7 +172,7 @@ class ViewController: UIViewController {
                 
                 /// Success!
                 success.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { action in
-                    self.careTakerButton.titleLabel!.text = "Caretaker Set! Reset?"
+                    self.careTakerButton.setTitle("Caretaker Set! Reset?", for: UIControlState.normal)
                     
                     
                     
