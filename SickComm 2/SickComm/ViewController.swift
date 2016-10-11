@@ -34,6 +34,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.speechSynthesizer.pauseSpeaking(at: .word)
+        self.careTakerButton.layer.borderWidth = 1.0
+        let color = UIColor(red: 255/255.0, green: 102/255.0, blue: 102/255.0, alpha: 1.0)
+        self.careTakerButton.layer.borderColor = color.cgColor
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -172,7 +176,7 @@ class ViewController: UIViewController {
                 
                 /// Success!
                 success.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { action in
-                    self.careTakerButton.setTitle("Caretaker Set! Reset?", for: UIControlState.normal)
+                    self.careTakerButton.setTitle("Reset Caretaker?", for: UIControlState.normal)
                     
                     
                     

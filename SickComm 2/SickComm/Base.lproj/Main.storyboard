@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,69 +20,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SickComm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8au-Gq-K2k">
-                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="50"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpO-rM-yl9">
-                                <state key="normal" backgroundImage="water"/>
-                                <connections>
-                                    <action selector="imageButton1PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="686-ag-mLZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-eB-AZQ">
-                                <state key="normal" backgroundImage="food"/>
-                                <connections>
-                                    <action selector="imageButton2PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mPb-6b-eon"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9S-km-Esj">
-                                <frame key="frameInset" minX="202" minY="487" width="154" height="100"/>
-                                <state key="normal" title="Button" image="medicine"/>
-                                <connections>
-                                    <action selector="imageButton4PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyU-Gg-7w9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-WQ-Q4u">
-                                <frame key="frameInset" minX="26" minY="465" width="175" height="175"/>
-                                <state key="normal" backgroundImage="blanket"/>
-                                <connections>
-                                    <action selector="imageButton3PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyF-6F-BF2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0u-N7-9N4">
-                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
-                                <state key="normal" title="Set Caretaker to Begin">
-                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="careTakerButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uID-Wj-3XD"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DaN-8U-eTC">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap an icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8au-Gq-K2k">
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="45"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bxY-9c-lX4">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpO-rM-yl9">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GpO-rM-yl9" secondAttribute="height" multiplier="173:150" id="R4J-oj-UDW"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="water"/>
+                                                <connections>
+                                                    <action selector="imageButton1PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="686-ag-mLZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-eB-AZQ">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="KiI-eB-AZQ" secondAttribute="height" multiplier="1:1" id="K9o-Yn-VE8"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="food"/>
+                                                <connections>
+                                                    <action selector="imageButton2PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mPb-6b-eon"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-Pq-wGu">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-WQ-Q4u">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uEI-WQ-Q4u" secondAttribute="height" multiplier="16:15" id="eXH-d4-1W3"/>
+                                                </constraints>
+                                                <state key="normal" image="blanket"/>
+                                                <connections>
+                                                    <action selector="imageButton3PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyF-6F-BF2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9S-km-Esj">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="l9S-km-Esj" secondAttribute="height" multiplier="173:150" id="69M-Ja-jBy"/>
+                                                </constraints>
+                                                <state key="normal" image="medicine"/>
+                                                <connections>
+                                                    <action selector="imageButton4PressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyU-Gg-7w9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0u-N7-9N4">
+                                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                        <state key="normal" title="Set Caretaker">
+                                            <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="careTakerButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uID-Wj-3XD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uEI-WQ-Q4u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="510-5z-J7O"/>
-                            <constraint firstItem="8au-Gq-K2k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aV-OM-bjv"/>
-                            <constraint firstItem="GpO-rM-yl9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="175" id="CgP-Pa-dFA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="l9S-km-Esj" secondAttribute="trailing" constant="-30" id="XB3-4e-LRb"/>
-                            <constraint firstItem="Z0u-N7-9N4" firstAttribute="top" secondItem="KiI-eB-AZQ" secondAttribute="bottom" constant="200" id="Xz0-6S-Y59"/>
-                            <constraint firstItem="GpO-rM-yl9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="a2R-Xp-fSY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KiI-eB-AZQ" secondAttribute="trailing" constant="20" id="aba-qw-xoC"/>
-                            <constraint firstItem="l9S-km-Esj" firstAttribute="leading" secondItem="uEI-WQ-Q4u" secondAttribute="trailing" constant="10" id="cF7-hr-PHu"/>
-                            <constraint firstItem="Z0u-N7-9N4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frS-vp-i3Z"/>
-                            <constraint firstItem="l9S-km-Esj" firstAttribute="top" secondItem="KiI-eB-AZQ" secondAttribute="bottom" constant="65" id="o6R-D7-PDM"/>
-                            <constraint firstItem="KiI-eB-AZQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="182" id="s9g-AS-HQM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z0u-N7-9N4" secondAttribute="bottom" constant="50" id="tJn-Ge-YZL"/>
-                            <constraint firstItem="8au-Gq-K2k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="75" id="ugl-FY-t9v"/>
-                            <constraint firstItem="uEI-WQ-Q4u" firstAttribute="top" secondItem="GpO-rM-yl9" secondAttribute="bottom" constant="60" id="y5y-hq-HIC"/>
+                            <constraint firstItem="DaN-8U-eTC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Wjp-dQ-YdY"/>
+                            <constraint firstItem="DaN-8U-eTC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="snT-dO-z0E"/>
+                            <constraint firstItem="DaN-8U-eTC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xAd-we-Ssm"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Xz0-6S-Y59"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="careTakerButton" destination="Z0u-N7-9N4" id="1gf-Za-dCc"/>
