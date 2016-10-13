@@ -36,9 +36,7 @@ class InterfaceController: WKInterfaceController {
     
     func playAudio(type:String) {
         let options = [WKMediaPlayerControllerOptionsAutoplayKey : "true"]
-        print(options)
         let filePath = Bundle.main.path(forResource: type, ofType: "wav")!
-        print(filePath)
         let fileUrl = NSURL.fileURL(withPath: filePath)
         presentMediaPlayerController(with: fileUrl, options: options,
                                      completion: { didPlayToEnd, endTime, error in
