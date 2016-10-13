@@ -31,12 +31,37 @@ class ViewController: UIViewController {
     
     var textField: UITextField!
     
+    var deviceName: String = "Patient"
+    
     override func viewDidLoad() {
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        }
+        catch let error as NSError {
+            print("Error: Could not set audio category: \(error), \(error.userInfo)")
+        }
+        
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        }
+        catch let error as NSError {
+            print("Error: Could not setActive to true: \(error), \(error.userInfo)")
+        }
+
+        
         super.viewDidLoad()
         self.speechSynthesizer.pauseSpeaking(at: .word)
+        
         self.careTakerButton.layer.borderWidth = 1.0
         let color = UIColor(red: 255/255.0, green: 102/255.0, blue: 102/255.0, alpha: 1.0)
         self.careTakerButton.layer.borderColor = color.cgColor
+        
+        let dN = UIDevice.current.name
+        let dName = dN.replacingOccurrences(of: "'s iPhone", with: "")
+        self.deviceName = dName.replacingOccurrences(of: "'s iPad", with: "")
+        
+        
 
     }
 
@@ -126,7 +151,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func imageButton1Pressed(sender: AnyObject) {
-       let alert = createUIAlert(title: "You need water", sayAloud: "I need water.", textMessage: "Your patient needs water")
+       
+        
+        let alert = createUIAlert(title: "You need water", sayAloud: "I need water.", textMessage: "\(deviceName) needs water")
     
         // show the alert
         self.present(alert, animated: true, completion: nil)
@@ -135,7 +162,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func imageButton2Pressed(sender: AnyObject) {
-        let alert = createUIAlert(title: "You need food", sayAloud: "I need food.", textMessage: "Your patient needs food")
+        let alert = createUIAlert(title: "You need food", sayAloud: "I need food.", textMessage: "\(deviceName) needs food")
         
         // show the alert
         self.present(alert, animated: true, completion: nil)
@@ -144,7 +171,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func imageButton3Pressed(sender: AnyObject) {
-        let alert = createUIAlert(title: "You need a blanket.", sayAloud: "I need a blanket", textMessage: "Your patient needs a blanket")
+        let alert = createUIAlert(title: "You need a blanket.", sayAloud: "I need a blanket", textMessage: "\(deviceName) needs a blanket")
         
         // show the alert
         self.present(alert, animated: true, completion: nil)
@@ -153,7 +180,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func imageButton4Pressed(sender: AnyObject) {
-        let alert = createUIAlert(title: "You need medicine.", sayAloud: "I need medicine", textMessage: "Your patient needs medicine")
+        let alert = createUIAlert(title: "You need medicine.", sayAloud: "I need medicine", textMessage: "\(deviceName) needs medicine")
         
         // show the alert
         self.present(alert, animated: true, completion: nil)

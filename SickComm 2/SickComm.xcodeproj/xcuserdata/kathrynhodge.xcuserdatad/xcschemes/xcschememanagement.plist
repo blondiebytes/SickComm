@@ -9,6 +9,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SickCommWatch (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>SickCommWatch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>SickCommWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>EB22A8B61DA44C53001EB3AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB3DB3441DAEC6800013F037</key>
 		<dict>
 			<key>primary</key>
 			<true/>

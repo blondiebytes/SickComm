@@ -17,6 +17,27 @@
 		EB22A8A61DA44C53001EB3AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB22A8A41DA44C53001EB3AB /* LaunchScreen.storyboard */; };
 		EB22A8B11DA44C53001EB3AB /* SickCommTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22A8B01DA44C53001EB3AB /* SickCommTests.swift */; };
 		EB22A8BC1DA44C53001EB3AB /* SickCommUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22A8BB1DA44C53001EB3AB /* SickCommUITests.swift */; };
+		EB3DB3491DAEC6800013F037 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3DB3471DAEC6800013F037 /* Interface.storyboard */; };
+		EB3DB34B1DAEC6800013F037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3DB34A1DAEC6800013F037 /* Assets.xcassets */; };
+		EB3DB3521DAEC6810013F037 /* SickCommWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EB3DB3511DAEC6810013F037 /* SickCommWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EB3DB3591DAEC6810013F037 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3DB3581DAEC6810013F037 /* InterfaceController.swift */; };
+		EB3DB35B1DAEC6810013F037 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3DB35A1DAEC6810013F037 /* ExtensionDelegate.swift */; };
+		EB3DB35D1DAEC6810013F037 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3DB35C1DAEC6810013F037 /* NotificationController.swift */; };
+		EB3DB35F1DAEC6810013F037 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3DB35E1DAEC6810013F037 /* ComplicationController.swift */; };
+		EB3DB3611DAEC6810013F037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3DB3601DAEC6810013F037 /* Assets.xcassets */; };
+		EB3DB3651DAEC6810013F037 /* SickCommWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EB3DB3451DAEC6800013F037 /* SickCommWatch.app */; };
+		EB464DA41DB01B4000105DB0 /* water.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DA31DB01B4000105DB0 /* water.wav */; };
+		EB464DA51DB01B4000105DB0 /* water.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DA31DB01B4000105DB0 /* water.wav */; };
+		EB464DA61DB01B4000105DB0 /* water.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DA31DB01B4000105DB0 /* water.wav */; };
+		EB464DA81DB01B4500105DB0 /* food.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DA71DB01B4500105DB0 /* food.wav */; };
+		EB464DA91DB01B4500105DB0 /* food.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DA71DB01B4500105DB0 /* food.wav */; };
+		EB464DAA1DB01B4500105DB0 /* food.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DA71DB01B4500105DB0 /* food.wav */; };
+		EB464DAC1DB01B5100105DB0 /* medicine.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DAB1DB01B5100105DB0 /* medicine.wav */; };
+		EB464DAD1DB01B5100105DB0 /* medicine.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DAB1DB01B5100105DB0 /* medicine.wav */; };
+		EB464DAE1DB01B5100105DB0 /* medicine.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DAB1DB01B5100105DB0 /* medicine.wav */; };
+		EB464DB01DB01B5500105DB0 /* blanket.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DAF1DB01B5500105DB0 /* blanket.wav */; };
+		EB464DB11DB01B5500105DB0 /* blanket.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DAF1DB01B5500105DB0 /* blanket.wav */; };
+		EB464DB21DB01B5500105DB0 /* blanket.wav in Resources */ = {isa = PBXBuildFile; fileRef = EB464DAF1DB01B5500105DB0 /* blanket.wav */; };
 		EB5594281DA88B4C009DBDD9 /* SwiftRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5594271DA88B4C009DBDD9 /* SwiftRequest.swift */; };
 		EB55942A1DA88C27009DBDD9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EB5594291DA88C27009DBDD9 /* Podfile */; };
 /* End PBXBuildFile section */
@@ -36,7 +57,46 @@
 			remoteGlobalIDString = EB22A8971DA44C53001EB3AB;
 			remoteInfo = SickComm;
 		};
+		EB3DB3531DAEC6810013F037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB22A8901DA44C53001EB3AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3DB3501DAEC6810013F037;
+			remoteInfo = "SickCommWatch Extension";
+		};
+		EB3DB3631DAEC6810013F037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB22A8901DA44C53001EB3AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3DB3441DAEC6800013F037;
+			remoteInfo = SickCommWatch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB3DB36B1DAEC6810013F037 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EB3DB3521DAEC6810013F037 /* SickCommWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3DB36D1DAEC6810013F037 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EB3DB3651DAEC6810013F037 /* SickCommWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13DFB5F96242AF910AB1AB2A /* Pods-SickCommUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SickCommUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SickCommUITests/Pods-SickCommUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +120,22 @@
 		EB22A8B71DA44C53001EB3AB /* SickCommUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SickCommUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB22A8BB1DA44C53001EB3AB /* SickCommUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SickCommUITests.swift; sourceTree = "<group>"; };
 		EB22A8BD1DA44C53001EB3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3DB3451DAEC6800013F037 /* SickCommWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SickCommWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3DB3481DAEC6800013F037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EB3DB34A1DAEC6800013F037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB3DB34C1DAEC6800013F037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3DB3511DAEC6810013F037 /* SickCommWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SickCommWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3DB3571DAEC6810013F037 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EB3DB3581DAEC6810013F037 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EB3DB35A1DAEC6810013F037 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EB3DB35C1DAEC6810013F037 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EB3DB35E1DAEC6810013F037 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EB3DB3601DAEC6810013F037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB3DB3621DAEC6810013F037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB464DA31DB01B4000105DB0 /* water.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = water.wav; sourceTree = "<group>"; };
+		EB464DA71DB01B4500105DB0 /* food.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = food.wav; sourceTree = "<group>"; };
+		EB464DAB1DB01B5100105DB0 /* medicine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = medicine.wav; sourceTree = "<group>"; };
+		EB464DAF1DB01B5500105DB0 /* blanket.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blanket.wav; sourceTree = "<group>"; };
 		EB5594271DA88B4C009DBDD9 /* SwiftRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftRequest.swift; path = ../SwiftRequest/SwiftRequest.swift; sourceTree = "<group>"; };
 		EB5594291DA88C27009DBDD9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F78FCD7D41127C38D94C4B9C /* Pods_SickCommTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SickCommTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +163,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0253AD2CD1DD4B5415D44610 /* Pods_SickCommUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3DB34E1DAEC6810013F037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +206,8 @@
 				EB22A89A1DA44C53001EB3AB /* SickComm */,
 				EB22A8AF1DA44C53001EB3AB /* SickCommTests */,
 				EB22A8BA1DA44C53001EB3AB /* SickCommUITests */,
+				EB3DB3461DAEC6800013F037 /* SickCommWatch */,
+				EB3DB3551DAEC6810013F037 /* SickCommWatch Extension */,
 				EB22A8991DA44C53001EB3AB /* Products */,
 				7273DCD13E017D458902BE24 /* Pods */,
 				6089F63EDF88865EA81DCD65 /* Frameworks */,
@@ -135,6 +220,8 @@
 				EB22A8981DA44C53001EB3AB /* SickComm.app */,
 				EB22A8AC1DA44C53001EB3AB /* SickCommTests.xctest */,
 				EB22A8B71DA44C53001EB3AB /* SickCommUITests.xctest */,
+				EB3DB3451DAEC6800013F037 /* SickCommWatch.app */,
+				EB3DB3511DAEC6810013F037 /* SickCommWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +259,42 @@
 			path = SickCommUITests;
 			sourceTree = "<group>";
 		};
+		EB3DB3461DAEC6800013F037 /* SickCommWatch */ = {
+			isa = PBXGroup;
+			children = (
+				EB3DB3471DAEC6800013F037 /* Interface.storyboard */,
+				EB3DB34A1DAEC6800013F037 /* Assets.xcassets */,
+				EB3DB34C1DAEC6800013F037 /* Info.plist */,
+			);
+			path = SickCommWatch;
+			sourceTree = "<group>";
+		};
+		EB3DB3551DAEC6810013F037 /* SickCommWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB3DB3581DAEC6810013F037 /* InterfaceController.swift */,
+				EB3DB35A1DAEC6810013F037 /* ExtensionDelegate.swift */,
+				EB3DB35C1DAEC6810013F037 /* NotificationController.swift */,
+				EB3DB35E1DAEC6810013F037 /* ComplicationController.swift */,
+				EB464DA31DB01B4000105DB0 /* water.wav */,
+				EB464DA71DB01B4500105DB0 /* food.wav */,
+				EB464DAB1DB01B5100105DB0 /* medicine.wav */,
+				EB464DAF1DB01B5500105DB0 /* blanket.wav */,
+				EB3DB3601DAEC6810013F037 /* Assets.xcassets */,
+				EB3DB3621DAEC6810013F037 /* Info.plist */,
+				EB3DB3561DAEC6810013F037 /* Supporting Files */,
+			);
+			path = "SickCommWatch Extension";
+			sourceTree = "<group>";
+		};
+		EB3DB3561DAEC6810013F037 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB3DB3571DAEC6810013F037 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		EB5594261DA88B4C009DBDD9 /* SwiftRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,10 +315,12 @@
 				EB22A8961DA44C53001EB3AB /* Resources */,
 				ED87BF4C70AB50D609BA8D81 /* [CP] Embed Pods Frameworks */,
 				A6FCFBB443BBB1A01F80E5CD /* [CP] Copy Pods Resources */,
+				EB3DB36D1DAEC6810013F037 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EB3DB3641DAEC6810013F037 /* PBXTargetDependency */,
 			);
 			name = SickComm;
 			productName = SickComm;
@@ -244,13 +369,47 @@
 			productReference = EB22A8B71DA44C53001EB3AB /* SickCommUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EB3DB3441DAEC6800013F037 /* SickCommWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3DB36C1DAEC6810013F037 /* Build configuration list for PBXNativeTarget "SickCommWatch" */;
+			buildPhases = (
+				EB3DB3431DAEC6800013F037 /* Resources */,
+				EB3DB36B1DAEC6810013F037 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB3DB3541DAEC6810013F037 /* PBXTargetDependency */,
+			);
+			name = SickCommWatch;
+			productName = SickCommWatch;
+			productReference = EB3DB3451DAEC6800013F037 /* SickCommWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EB3DB3501DAEC6810013F037 /* SickCommWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3DB36A1DAEC6810013F037 /* Build configuration list for PBXNativeTarget "SickCommWatch Extension" */;
+			buildPhases = (
+				EB3DB34D1DAEC6810013F037 /* Sources */,
+				EB3DB34E1DAEC6810013F037 /* Frameworks */,
+				EB3DB34F1DAEC6810013F037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SickCommWatch Extension";
+			productName = "SickCommWatch Extension";
+			productReference = EB3DB3511DAEC6810013F037 /* SickCommWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EB22A8901DA44C53001EB3AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = blondiebytes;
 				TargetAttributes = {
@@ -271,6 +430,16 @@
 						LastSwiftMigration = 0800;
 						TestTargetID = EB22A8971DA44C53001EB3AB;
 					};
+					EB3DB3441DAEC6800013F037 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 63H5SAKBK2;
+						ProvisioningStyle = Automatic;
+					};
+					EB3DB3501DAEC6810013F037 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 63H5SAKBK2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = EB22A8931DA44C53001EB3AB /* Build configuration list for PBXProject "SickComm" */;
@@ -289,6 +458,8 @@
 				EB22A8971DA44C53001EB3AB /* SickComm */,
 				EB22A8AB1DA44C53001EB3AB /* SickCommTests */,
 				EB22A8B61DA44C53001EB3AB /* SickCommUITests */,
+				EB3DB3441DAEC6800013F037 /* SickCommWatch */,
+				EB3DB3501DAEC6810013F037 /* SickCommWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +469,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB464DB01DB01B5500105DB0 /* blanket.wav in Resources */,
+				EB464DA81DB01B4500105DB0 /* food.wav in Resources */,
+				EB464DAC1DB01B5100105DB0 /* medicine.wav in Resources */,
+				EB464DA41DB01B4000105DB0 /* water.wav in Resources */,
 				EB22A8A61DA44C53001EB3AB /* LaunchScreen.storyboard in Resources */,
 				EB22A8A31DA44C53001EB3AB /* Assets.xcassets in Resources */,
 				EB55942A1DA88C27009DBDD9 /* Podfile in Resources */,
@@ -316,6 +491,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3DB3431DAEC6800013F037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB464DA91DB01B4500105DB0 /* food.wav in Resources */,
+				EB3DB34B1DAEC6800013F037 /* Assets.xcassets in Resources */,
+				EB464DAD1DB01B5100105DB0 /* medicine.wav in Resources */,
+				EB3DB3491DAEC6800013F037 /* Interface.storyboard in Resources */,
+				EB464DB11DB01B5500105DB0 /* blanket.wav in Resources */,
+				EB464DA51DB01B4000105DB0 /* water.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3DB34F1DAEC6810013F037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB464DAA1DB01B4500105DB0 /* food.wav in Resources */,
+				EB464DA61DB01B4000105DB0 /* water.wav in Resources */,
+				EB464DAE1DB01B5100105DB0 /* medicine.wav in Resources */,
+				EB464DB21DB01B5500105DB0 /* blanket.wav in Resources */,
+				EB3DB3611DAEC6810013F037 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +686,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB3DB34D1DAEC6810013F037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3DB35D1DAEC6810013F037 /* NotificationController.swift in Sources */,
+				EB3DB35F1DAEC6810013F037 /* ComplicationController.swift in Sources */,
+				EB3DB35B1DAEC6810013F037 /* ExtensionDelegate.swift in Sources */,
+				EB3DB3591DAEC6810013F037 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -498,6 +709,16 @@
 			isa = PBXTargetDependency;
 			target = EB22A8971DA44C53001EB3AB /* SickComm */;
 			targetProxy = EB22A8B81DA44C53001EB3AB /* PBXContainerItemProxy */;
+		};
+		EB3DB3541DAEC6810013F037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3DB3501DAEC6810013F037 /* SickCommWatch Extension */;
+			targetProxy = EB3DB3531DAEC6810013F037 /* PBXContainerItemProxy */;
+		};
+		EB3DB3641DAEC6810013F037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3DB3441DAEC6800013F037 /* SickCommWatch */;
+			targetProxy = EB3DB3631DAEC6810013F037 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,6 +737,14 @@
 				EB22A8A51DA44C53001EB3AB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB3DB3471DAEC6800013F037 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB3DB3481DAEC6800013F037 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -703,6 +932,90 @@
 			};
 			name = Release;
 		};
+		EB3DB3661DAEC6810013F037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 63H5SAKBK2;
+				IBSC_MODULE = SickCommWatch_Extension;
+				INFOPLIST_FILE = SickCommWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blondiebytes.SickComm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		EB3DB3671DAEC6810013F037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 63H5SAKBK2;
+				IBSC_MODULE = SickCommWatch_Extension;
+				INFOPLIST_FILE = SickCommWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blondiebytes.SickComm.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		EB3DB3681DAEC6810013F037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 63H5SAKBK2;
+				INFOPLIST_FILE = "SickCommWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blondiebytes.SickComm.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		EB3DB3691DAEC6810013F037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 63H5SAKBK2;
+				INFOPLIST_FILE = "SickCommWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blondiebytes.SickComm.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -738,6 +1051,24 @@
 			buildConfigurations = (
 				EB22A8C71DA44C53001EB3AB /* Debug */,
 				EB22A8C81DA44C53001EB3AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3DB36A1DAEC6810013F037 /* Build configuration list for PBXNativeTarget "SickCommWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3DB3681DAEC6810013F037 /* Debug */,
+				EB3DB3691DAEC6810013F037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3DB36C1DAEC6810013F037 /* Build configuration list for PBXNativeTarget "SickCommWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3DB3661DAEC6810013F037 /* Debug */,
+				EB3DB3671DAEC6810013F037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
